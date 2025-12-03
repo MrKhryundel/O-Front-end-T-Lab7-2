@@ -1,0 +1,73 @@
+/* Загальні стилі програми */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #222;
+}
+
+.app-wrapper {
+  max-width: 980px;
+  margin: 24px auto;
+  padding: 18px;
+  border: 2px solid #7aa8d8;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.app-title {
+  text-align: center;
+  margin: 6px 0 18px 0;
+  font-size: 22px;
+  color: #1d4f7a;
+}
+
+/* Сітка карток */
+.goods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+
+/* Картка товару */
+.goods-card {
+  background: #fff;
+  border: 1px solid #e3e6ea;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+  text-align: center;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Обгортка для картинки, фіксований розмір */
+.goods-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  margin-bottom: 12px;
+}
+
+.goods-image {
+  max-width: 220px;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+/* Інформація під картинкою */
+.goods-name {
+  font-size: 16px;
+  margin: 8px 0 6px 0;
+  color: #0b6b9a;
+}
+
+.goods-price {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
